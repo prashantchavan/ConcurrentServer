@@ -48,7 +48,7 @@ namespace ConcurrentServer
                 while (true)
                 {
                     string str = sr.ReadLine();
-                    Console.WriteLine(">>Command issued by client {0}", str);
+                    Console.WriteLine(">>Command issued by client {0} - {1}",ClientToken,str);
                     if (str.Contains("PUSH"))
                     {
                         string[] UserInput = str.Split(' ');
