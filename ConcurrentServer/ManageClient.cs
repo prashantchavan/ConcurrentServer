@@ -17,6 +17,7 @@ namespace ConcurrentServer
         NetworkStream ns;
         StreamReader sr;
         StreamWriter sw;
+
         public ManageClient(TcpClient Client, string ClientID)
         {
             this.Client = Client;
