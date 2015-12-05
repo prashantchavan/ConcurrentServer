@@ -46,9 +46,9 @@ namespace ConcurrentServer
             Stack stk = new Stack(10);
             try
             {
-                while (true)
-                {
-                    string str = sr.ReadLine();
+                string str = sr.ReadLine();
+                if (str != "SIGNOUT")
+                {                    
                     Console.WriteLine(">>Command issued by client {0} - {1}",ClientToken,str);
                     if (str.Contains("PUSH"))
                     {
